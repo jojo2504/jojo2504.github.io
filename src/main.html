@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        
+        <div class="hero-content">
+            <h1>Jonathan Tran</h1>
+            <p>Full Stack Developer & Problem Solver</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content reveal">
+                <div class="about-text">
+                    <p>
+                        Hi! I'm Jonathan, a first year engineering student and a passionate developer with a love for creating efficient and elegant solutions 
+                        to complex problems. My journey in programming started with curiosity and has evolved into a 
+                        deep commitment to mastering both low-level systems and high-level applications.
+                    </p>
+                    <p>
+                        I specialize in systems programming with Rust and C#, and I'm particularly interested in building 
+                        performance-critical applications, game engines, and complete DevOps projects. 
+                        When I'm not coding, you'll find me play some strategy games like League of Legends or Clash of Clans.
+                    </p>
+                    <p>
+                        I believe in writing clean, maintainable code and constantly pushing myself to learn new technologies 
+                        and methodologies. Whether it's developing AI-powered chess engines or building scalable web platforms, 
+                        I approach every project with enthusiasm and attention to detail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+                            Python
+                        </span>
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="skill-icon">
+                            C#
+                        </span>
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust" class="skill-icon">
+                            Rust
+                        </span>
+                        <!-- <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" class="skill-icon">
+                            Go
+                        </span>
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" alt="Solidity" class="skill-icon">
+                            Solidity
+                        </span> -->
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+                            Git
+                        </span>
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="skill-icon">
+                            GitHub
+                        </span>
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="skill-icon">
+                            Docker
+                        </span>
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" class="skill-icon">
+                            Azure DevOps
+                        </span>
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" class="skill-icon">
+                            VSCode
+                        </span>
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="skill-icon">
+                            Linux
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Completed Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Completed Projects</h2>
+            
+            <div class="projects-container">
+                <!-- Pinned Project -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div>
+                            <h3>Chess Engine</h3>
+                            <span class="pinned-badge">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                Pinned
+                            </span>
+                        </div>
+                        <span class="project-status status-completed">Completed</span>
+                    </div>
+                    <p>A Chess Engine using UCI protocol</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C#</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/jojo2504/StellarLilyChess" class="project-link" target="_blank">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Other Projects (Hidden by default) -->
+                <div class="other-projects" id="otherProjects">
+                    <div class="project-card reveal">
+                        <div class="project-header">
+                            <h3>Connect-4</h3>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                        <p>The classic game connect-4, with 14 AI levels integrated to play against.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Rust</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jojo2504/puissance-4" class="project-link" target="_blank">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-header">
+                            <h3>Living-Paris (School work)</h3>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                        <p>An application that facilitates meal sharing between neighbors within Paris.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">C#</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jojo2504/living-paris" class="project-link" target="_blank">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-header">
+                            <h3>Boggle Game (School work)</h3>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                        <p>The popular Boggle game</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">C#</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jojo2504/Boogle" class="project-link" target="_blank">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Button -->
+                <div class="btn-container">
+                    <button class="view-all-btn" id="viewAllBtn" onclick="toggleProjects()">
+                        <span id="btnText">View All Projects</span>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Projects -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Current Projects</h2>
+            
+            <div class="projects-container">
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>YAPP</h3>
+                        <span class="project-status status-in-progress">In Progress</span>
+                    </div>
+                    <p>Building Yet Another Programming Platform where colleges and schools can host their own programming exams.                        
+                    </br>Inspired by LeetCode.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Go</span>
+                        <span class="tech-badge">Rust</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Vite</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/jojo2504/yapp" class="project-link" target="_blank">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Projects -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Upcoming Projects</h2>
+            
+            <div class="projects-container">
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>Operating System</h3>
+                        <span class="project-status status-planned">Planned</span>
+                    </div>
+                    <p>Planning to create own mini Operating System.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Assembly</span>
+                        <span class="tech-badge">Rust</span>
+                        <span class="tech-badge">Unknown Yet...</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>BASE blockchain App</h3>
+                        <span class="project-status status-planned">Planned</span>
+                    </div>
+                    <p>Planning to create an application based on the BASE Blockchain.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Solidity</span>
+                        <span class="tech-badge">Ethereum</span>
+                        <span class="tech-badge">Unknown Yet...</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.base.org" class="project-link" target="_blank">
+                            base.org
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <h3>Linux Distribution</h3>
+                        <span class="project-status status-planned">Planned</span>
+                    </div>
+                    <p>Planning to create a very basic Linux distribution.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Unknown Yet...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
