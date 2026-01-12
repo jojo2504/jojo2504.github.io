@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rust Developer Portfolio - Design System
+   Colors: Rust Orange, Solana Purple/Teal, Ethereum Blue
+   Light theme with warm cream backgrounds
+*/
+
+@layer base {
+  :root {
+    /* Warm cream background - not pure white */
+    --background: 40 30% 96%;
+    --foreground: 220 20% 10%;
+
+    /* Cards with subtle warmth */
+    --card: 40 25% 98%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 40 25% 98%;
+    --popover-foreground: 220 20% 10%;
+
+    /* Rust Orange as primary */
+    --primary: 9 70% 48%;
+    --primary-foreground: 40 30% 98%;
+
+    /* Warm secondary */
+    --secondary: 40 20% 92%;
+    --secondary-foreground: 220 20% 10%;
+
+    /* Muted tones */
+    --muted: 40 15% 90%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Solana purple as accent */
+    --accent: 263 100% 64%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Ethereum blue for special accents */
+    --ethereum: 226 76% 65%;
+    --ethereum-foreground: 0 0% 100%;
+
+    /* Solana teal for gradients */
+    --solana-teal: 158 91% 51%;
+    --solana-purple: 263 100% 64%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 9 70% 48%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-rust: linear-gradient(135deg, hsl(9 70% 48%), hsl(20 80% 55%));
+    --gradient-solana: linear-gradient(135deg, hsl(263 100% 64%), hsl(158 91% 51%));
+    --gradient-ethereum: linear-gradient(135deg, hsl(226 76% 65%), hsl(263 100% 64%));
+    --gradient-hero: linear-gradient(180deg, hsl(40 30% 96%) 0%, hsl(40 25% 93%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(220 20% 10% / 0.08);
+    --shadow-md: 0 8px 24px -8px hsl(220 20% 10% / 0.12);
+    --shadow-lg: 0 16px 48px -16px hsl(220 20% 10% / 0.16);
+    --shadow-glow-rust: 0 0 40px -10px hsl(9 70% 48% / 0.4);
+    --shadow-glow-solana: 0 0 40px -10px hsl(263 100% 64% / 0.3);
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 40 20% 95%;
+    --card: 220 18% 12%;
+    --card-foreground: 40 20% 95%;
+    --popover: 220 18% 12%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 9 70% 55%;
+    --primary-foreground: 220 20% 8%;
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 263 100% 70%;
+    --accent-foreground: 220 20% 8%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 9 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01";
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+}
+
+@layer components {
+  .text-gradient-rust {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-rust);
+  }
+
+  .text-gradient-solana {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-solana);
+  }
+
+  .text-gradient-ethereum {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-ethereum);
+  }
+
+  .bg-gradient-rust {
+    background-image: var(--gradient-rust);
+  }
+
+  .bg-gradient-solana {
+    background-image: var(--gradient-solana);
+  }
+
+  .bg-gradient-ethereum {
+    background-image: var(--gradient-ethereum);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .glow-rust {
+    box-shadow: var(--shadow-glow-rust);
+  }
+
+  .glow-solana {
+    box-shadow: var(--shadow-glow-solana);
+  }
+
+  /* Terminal-style code blocks */
+  .terminal {
+    @apply font-mono text-sm bg-foreground/5 rounded-lg p-4 border border-border;
+  }
+
+  .terminal-prompt::before {
+    content: "$ ";
+    @apply text-primary font-bold;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-gradient {
+    animation: gradient-shift 8s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
