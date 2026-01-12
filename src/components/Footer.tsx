@@ -27,7 +27,7 @@ const Footer = () => {
               <span className="font-mono">GitHub</span>
             </a>
             <a 
-              href="mailto:contact@example.com"
+              href="mailto:jojo.duchuy@gmail.com"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
